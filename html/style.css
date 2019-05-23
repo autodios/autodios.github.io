@@ -1,0 +1,49 @@
+body {
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+  margin: 15px auto;
+  max-width: 860px;
+}
+
+img{
+  max-width: 100%;
+  border: solid 1px #CFCFCF;
+}
+
+.item{
+  margin: 20px 0;
+  padding-bottom: 10px;
+}
+
+.description{
+  padding-top: 20px;
+}
+
+h1 {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 10px;
+}
+
+a, a:visited {
+  color: #10208C;
+  text-decoration: none;
+}
+
+a.external:after {
+    content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=");
+    margin: 0 0 0 5px;
+}
+
+.collection{
+    padding-left: 20px;
+    border-left: thick double lightgray;
+}
+
+.html-content{
+    padding: 10px;
+    border: solid 1px lightgray;
+    max-height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
