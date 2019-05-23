@@ -5,7 +5,11 @@ body {
   margin: 15px auto;
   max-width: 860px;
  text-align:center;
+ 
 }
+
+h1 {text-align:center;}
+img {text-align:center;}
 
 img{
   max-width: 100%;
