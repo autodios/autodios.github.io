@@ -4,7 +4,7 @@ body {
   font-size: 11pt;
   margin: 15px auto;
   max-width: 860px;
- text-align:center;
+
  
 }
 
@@ -12,7 +12,7 @@ h1 {text-align:center;}
 img {text-align:center;}
 
 img{
-  max-width: 100%;
+  max-width: 50%;
   border: solid 1px #CFCFCF;
 }
 
@@ -26,7 +26,7 @@ img{
 }
 
 h1 {
-  text-align:center;
+ 
   border-bottom: 1px solid #CCC;
   padding-bottom: 10px;
 }
