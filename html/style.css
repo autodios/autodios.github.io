@@ -4,8 +4,7 @@ body {
   font-size: 11pt;
   margin: 15px auto;
   max-width: 860px;
-  h1 {text-align:center;}
-  p {text-align:center;}
+ text-align:center;
 }
 
 img{
@@ -23,6 +22,7 @@ img{
 }
 
 h1 {
+  text-align:center;
   border-bottom: 1px solid #CCC;
   padding-bottom: 10px;
 }
