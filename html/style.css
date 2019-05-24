@@ -15,6 +15,7 @@ img {text-align:center;}
 img{
   max-width: 50%;
   border: solid 1px #CFCFCF;
+  position: fixed;
   top: 50%;
   left: 50%;
   /* bring your own prefixes */
