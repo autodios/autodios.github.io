@@ -22,9 +22,9 @@
   position: relative;
   float: left;
 
-  margin: 0px 0px 25px 25px;
-  width: 290px;
-  height: 290px;
+  margin: 0px 0px 20px 20px;
+  width: 280px;
+  height: 200px;
   opacity: 1;
   /*background-color: #400;*/
   /*-webkit-backface-visibility: hidden;
@@ -41,7 +41,7 @@
   display: block;
   margin: 0 auto;
   border: none;
-  min-width: 290px;
+  min-width: 280px;
   max-width: 300px;
   /*min-height: 100%;*/
 }
