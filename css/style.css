@@ -5,8 +5,8 @@ h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
 body {
 
  /*font-family: 'Anton', sans-serif;*/
-	font-family: 'Monotone';
-  font-size: 14px;
+	font-family: 'Anton';
+  font-size: 12px;
   line-height: 1.52;
   background-color: #f2f2e9;
   text-rendering: optimizeLegibility;
