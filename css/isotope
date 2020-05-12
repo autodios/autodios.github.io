@@ -63,7 +63,7 @@
   background-color: #f8f8f8;
   color: #000;
   height: 40px;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .isotope-item {
