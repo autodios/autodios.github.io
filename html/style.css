@@ -44,7 +44,7 @@ a.external:after {
 }
 
 .html-content{
-    padding: 10px;
+    padding: 12px;
     border: solid 1px lightgray;
     max-height: 400px;
     overflow: scroll;
