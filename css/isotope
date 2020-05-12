@@ -5,7 +5,7 @@
   max-width: 1400px;
   list-style: none;
   /*text-align: center;*/
-  font-size: 0px;
+  font-size: 10px;
 }
 
 
