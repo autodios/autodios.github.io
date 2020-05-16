@@ -11,7 +11,7 @@ font-family: 'Cambria', serif;
 font-size: 14px;
 text-rendering: optimizeLegibility;
 padding-left: 8%;
-   max-width: 860px;
+   max-width: 1400px;
  
 }
 
@@ -48,7 +48,7 @@ a.external:after {
 
 .collection{
     padding-left: 20px;
-    border-left: thick double lightgray;
+    /*border-left: thick double lightgray;*/
 }
 
 .html-content{
