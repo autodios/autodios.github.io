@@ -4,13 +4,20 @@ h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
 
 body {
 
- /*font-family: 'Anton', sans-serif;*/
+ /*font-family: 'Anton', sans-serif;
 	font-family: 'Work Sans', sans-serif;
   font-size: 12px;
   line-height: 1.52;
-  background-color: #f2f2e9;
-  text-rendering: optimizeLegibility;
-  padding-left: 8%;
+  background-color: #f2f2e9;*/
+ 
+background: #ffffff;
+color: #2d2b2b;
+margin: -17px 30px 30px 10px;
+font-family: 'Cambria', serif;
+font-size: 14px;
+line-height: 1.6px;
+text-rendering: optimizeLegibility;
+padding-left: 8%;
 }
 
 
