@@ -32,7 +32,7 @@ img{
 
 h1 {
  
-  border-bottom: 1px solid #f2f2e9;
+  border-bottom: 1px solid #ffffff;
   padding-bottom: 5px;
 }
 
@@ -53,7 +53,7 @@ a.external:after {
 
 .html-content{
     padding: 12px;
-    border: solid 1px lightgray;
+    border: solid 1px #ffffff;
     max-height: 400px;
     overflow: scroll;
     overflow-x: hidden;
