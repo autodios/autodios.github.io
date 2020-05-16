@@ -130,7 +130,7 @@ article
 }
 
 .article.intro .content .more {
-  text-decoration: underline;
+ /* text-decoration: underline;*/
   font-weight: 700;
   padding-left: 0.3em;
 }
@@ -172,7 +172,7 @@ footer .nav a {
 }
 
 footer .about {
-  border-top: 1px dashed #d2d2d2;
+  /*border-top: 1px dashed #d2d2d2;*/
   padding: 2.2em 3em;
   font-size: 0.7em;
   -webkit-column-count: 3;
