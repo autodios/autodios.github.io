@@ -1,9 +1,18 @@
 body {
-  color: black;
+  /*color: black;
   font-family: 'Work Sans';
   font-size: 10pt;
-  margin: 15px auto;
-  max-width: 860px;
+  margin: 15px auto;*/
+ 
+  background: #ffffff;
+color: #2d2b2b;
+margin: 15px auto;
+font-family: 'Cambria', serif;
+font-size: 14px;
+line-height: 1.6px;
+text-rendering: optimizeLegibility;
+padding-left: 8%;
+   max-width: 860px;
  
 }
 
