@@ -1,0 +1,2 @@
+# autodios.github.io
+Paola Torres Núñez del Prado (PE) explores the boundaries and connections in between tactility, the visual and audio related to the human voice, to nature, and to synthetic ones those whose listening is often considered less harmonious, such as machine or digital noises. Her work is essentially complex: she explores the limits of the senses, examining the concepts of interpretation, translation and misrepresentation, so to reflect on mediated sensorial experiences while questioning the cultural hegemony within the history of Technology and the Arts.
