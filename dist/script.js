@@ -29,7 +29,7 @@ let counterS = 0;
 //var mAudioElement = document.getElementById('song');
 
 const audio = new Audio();
-audio.src = "http://www.autodios.github.io/dist/COMOTODO.mp3";
+audio.src = "http://autodios.github.io/dist/COMOTODO.mp3";
 audio.controls = true;
 audio.autoplay = true;
 audio.crossOrigin = "anonymous";
