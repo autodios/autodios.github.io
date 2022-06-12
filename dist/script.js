@@ -29,10 +29,12 @@ let counterS = 0;
 //var mAudioElement = document.getElementById('song');
 
 const audio = new Audio();
-audio.src = "http://autodios.github.io/dist/COMOTODO.mp3";
+audio.src = "http://www.singingtextiles.com/ymecomo.mp3";
 audio.controls = true;
 audio.autoplay = true;
 audio.crossOrigin = "anonymous";
+audio.id = "player";
+audio.style.cssText += "display:none;"
 document.body.appendChild(audio);
 
 
