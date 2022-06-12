@@ -49,7 +49,14 @@ analyzer.connect(audioCtx.destination);
 //connect the volume adjustments from the user
 volumeControl.gain.value = audio.volume;
 
-
+function playPause() {
+    var mediaPlayer = document.getElementById('player');
+    if (mediaPlayer.paused) {
+        mediaPlayer.play(); 
+    } else {
+        mediaPlayer.pause(); 
+    }
+}
 
 function setup() {
   setupColors();
