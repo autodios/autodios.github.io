@@ -71,9 +71,9 @@ else {
     $('#player').remove() // just to make sure that it will not have 2x audio in the background 
 }
 
-function playPause() 
+function playPause(){
     var mediaPlayer = null;
-    if (!isChrome({
+    if (!isChrome){
         var mediaPlayer = document.getElementById('player');
     }
     else {
