@@ -44,7 +44,6 @@ ifrm.allow = 'autoplay';
 ifrm.autoplay = true;
 ifrm.crossOrigin = "anonymous";
 ifrm.id = "iframePlayer";
-ifrm.style.cssText += "display:none;";
 document.body.appendChild(ifrm);
 
 
