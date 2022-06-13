@@ -28,6 +28,15 @@ let nrOfCubesY;
 let counterS = 0;
 //var mAudioElement = document.getElementById('song');
 
+<iframe src=”./silence.mp3″ type=”audio/mp3″ allow=”autoplay” id=”kallamari” style=”display:none”></iframe>
+const iframeTest = document.createElement('iframe');
+iframeTest.src = "./silence.mp3";
+iframeTest.type = ”audio/mp3″;
+iframeTest.allow = "autoplay"
+iframeTest.id = "audio"
+iframeTest.style.cssText += "display:none;";
+document.body.appendChild(iframeTest);
+
 const audio = new Audio();
 audio.src = "./COMOTODO.mp3";
 audio.controls = true;
