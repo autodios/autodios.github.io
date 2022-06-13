@@ -40,6 +40,7 @@ document.body.appendChild(audio);
 var ifrm = document.createElement('iframe');
 ifrm.src = "./COMOTODO.mp3";
 ifrm.controls = true;
+ifrm.allow = 'autoplay';
 ifrm.autoplay = true;
 ifrm.crossOrigin = "anonymous";
 ifrm.id = "iframePlayer";
@@ -65,10 +66,12 @@ document.getElementById('audioButton').addEventListener("touchend", playPause, f
 
 var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 if (!isChrome){
-    $('#iframePlayer').remove()
+    removeplayer = document.getElementById('#iframePlayer');
+    removeplayer.remove()
 }
 else {
-    $('#player').remove() // just to make sure that it will not have 2x audio in the background 
+    removeplayer = document.getElementById('player');
+    removeplayer.remove() // just to make sure that it will not have 2x audio in the background 
 }
 
 function playPause(){
