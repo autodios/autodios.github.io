@@ -34,7 +34,6 @@ audio.controls = true;
 audio.autoplay = true;
 audio.crossOrigin = "anonymous";
 audio.id = "player";
-audio.style.cssText += "display:none;"
 document.body.appendChild(audio);
 
 
