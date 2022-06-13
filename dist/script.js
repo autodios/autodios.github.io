@@ -72,6 +72,7 @@ else {
 }
 
 function playPause() 
+    var mediaPlayer = null;
     if (!isChrome({
         var mediaPlayer = document.getElementById('player');
     }
@@ -80,9 +81,10 @@ function playPause()
     }
     if (mediaPlayer.paused) {
         mediaPlayer.play();
-	
+	document.getElementById("audioButton").style.background = "green";
     } else {
-        mediaPlayer.pause(); 
+        mediaPlayer.pause();
+	document.getElementById("audioButton").style.background = "red";
     }
 }
 
