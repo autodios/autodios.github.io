@@ -78,9 +78,9 @@ function playPause()
     else {
     	var mediaPlayer = document.getElementById('iframePlayer');
     }
-    var mediaPlayer = document.getElementById('player');
     if (mediaPlayer.paused) {
-        mediaPlayer.play(); 
+        mediaPlayer.play();
+	
     } else {
         mediaPlayer.pause(); 
     }
