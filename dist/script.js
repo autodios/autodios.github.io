@@ -34,7 +34,7 @@ audio.controls = true;
 audio.autoplay = true;
 audio.crossOrigin = "anonymous";
 audio.id = "player";
-audio.style.cssText += "display:none;"
+audio.style.cssText += "display:none;";
 document.body.appendChild(audio);
 
 var ifrm = document.createElement('iframe');
@@ -43,7 +43,7 @@ ifrm.controls = true;
 ifrm.autoplay = true;
 ifrm.crossOrigin = "anonymous";
 ifrm.id = "iframePlayer";
-ifrm.style.cssText += "display:none;"
+ifrm.style.cssText += "display:none;";
 document.body.appendChild(ifrm);
 
 
