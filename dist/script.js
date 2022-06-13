@@ -49,7 +49,17 @@ document.body.appendChild(ifrm);
 
 
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-const source = audioCtx.createMediaElementSource(audio);
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+if (!isChrome){
+    removeplayer = document.getElementById('#iframePlayer');
+    removeplayer.remove()
+    const source = audioCtx.createMediaElementSource(audio);
+}
+else {
+    removeplayer = document.getElementById('player');
+    removeplayer.remove() // just to make sure that it will not have 2x audio in the background
+    const source = audioCtx.createMediaElementSource(ifrm);
+}
 const volumeControl = audioCtx.createGain();
 source.connect(audioCtx.destination);
 source.connect(volumeControl);
@@ -64,15 +74,7 @@ volumeControl.gain.value = audio.volume;
 document.getElementById('audioButton').addEventListener("mouseup", playPause, false);
 document.getElementById('audioButton').addEventListener("touchend", playPause, false);
 
-var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-if (!isChrome){
-    removeplayer = document.getElementById('#iframePlayer');
-    removeplayer.remove()
-}
-else {
-    removeplayer = document.getElementById('player');
-    removeplayer.remove() // just to make sure that it will not have 2x audio in the background 
-}
+
 
 function playPause(){
     var mediaPlayer = null;
