@@ -37,7 +37,7 @@ audio.id = "player";
 audio.style.cssText += "display:none;";
 document.body.appendChild(audio);
 
-var ifrm = document.createElement('iframe');
+var ifrm = document.createElement('video');
 ifrm.src = "./COMOTODO.mp3";
 ifrm.controls = true;
 ifrm.allow = 'autoplay';
