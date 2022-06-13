@@ -31,7 +31,7 @@ let counterS = 0;
 const audio = new Audio();
 audio.src = "./COMOTODO.mp3";
 audio.controls = true;
-audio.autoplay = true;
+audio.autoplay = false;
 audio.crossOrigin = "anonymous";
 audio.id = "player";
 document.body.appendChild(audio);
