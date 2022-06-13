@@ -31,8 +31,8 @@ let counterS = 0;
 const iframeTest = document.createElement('iframe');
 iframeTest.src = "./silence.mp3";
 iframeTest.type = ”audio/mp3″;
-iframeTest.allow = "autoplay"
-iframeTest.id = "audio"
+iframeTest.allow = "autoplay";
+iframeTest.id = "audio";
 iframeTest.style.cssText += "display:none;";
 document.body.appendChild(iframeTest);
 
