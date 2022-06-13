@@ -31,7 +31,7 @@ let counterS = 0;
 const audio = new Audio();
 audio.src = "./COMOTODO.mp3";
 audio.controls = true;
-audio.autoplay = false;
+audio.autoplay = true;
 audio.crossOrigin = "anonymous";
 audio.id = "player";
 audio.style.cssText += "display:none;"
@@ -40,7 +40,7 @@ document.body.appendChild(audio);
 var ifrm = document.createElement('iframe');
 ifrm.src = "./COMOTODO.mp3";
 ifrm.controls = true;
-ifrm.autoplay = false;
+ifrm.autoplay = true;
 ifrm.crossOrigin = "anonymous";
 ifrm.id = "iframePlayer";
 ifrm.style.cssText += "display:none;"
