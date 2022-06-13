@@ -234,10 +234,7 @@ function pixelate(freqData) {
     cube.material.color = new THREE.Color("rgb("+pixels[((w - x * size) + w * (h - y * size)) * 4]+","+pixels[(((w - x * size) + w * (h - y * size)) * 4)+1]+","+pixels[(((w - x * size) + w * (h - y * size)) * 4)+2]+")");
 	
     let freq = numscale(freqData[0], 0, 600, 0.5, 6);
-	if (counterS % 1000 == 0) {
-		console.log("FREQ:", freq);
-	}
-	counterS += 1;
+	
     let z = col / 10 + 0.0 * freq;
 	z = z*freq;
 	//console.log(z);
