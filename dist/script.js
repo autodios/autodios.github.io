@@ -51,12 +51,12 @@ ifrm.allow = 'autoplay';
 ifrm.autoplay = true;
 ifrm.crossOrigin = "anonymous";
 ifrm.id = "iframePlayer";
-document.body.appendChild(ifrm);
+//document.body.appendChild(ifrm);
 
 
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 let verifyaudio;
-var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+/*var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 if (!isChrome){
     removeplayer = document.getElementById('#iframePlayer');
     removeplayer.remove();
@@ -66,8 +66,9 @@ else {
     removeplayer = document.getElementById('player');
     removeplayer.remove(); // just to make sure that it will not have 2x audio in the background
     verifyaudio = audioCtx.createMediaElementSource(ifrm);
-}
-const source = verifyaudio;
+}*/
+const source = audioCtx.createMediaElementSource(audio);
+//const source = verifyaudio;
 const volumeControl = audioCtx.createGain();
 source.connect(audioCtx.destination);
 source.connect(volumeControl);
@@ -85,13 +86,13 @@ document.getElementById('audioButton').addEventListener("touchend", playPause, f
 
 
 function playPause(){
-    var mediaPlayer = null;
-    if (!isChrome){
-        var mediaPlayer = document.getElementById('player');
+    var mediaPlayer = document.getElementById('player');;
+    /*if (!isChrome){
+        mediaPlayer = document.getElementById('player');
     }
     else {
-    	var mediaPlayer = document.getElementById('iframePlayer');
-    }
+    	mediaPlayer = document.getElementById('iframePlayer');
+    }*/
     if (mediaPlayer.paused) {
         mediaPlayer.play();
 	document.getElementById("audioButton").style.background = "green";
