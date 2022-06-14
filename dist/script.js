@@ -81,8 +81,8 @@ analyzer.connect(audioCtx.destination);
 //connect the volume adjustments from the user
 volumeControl.gain.value = audio.volume;
 
-document.getElementById('audioButton').addEventListener("mouseup", playPause, false);
-document.getElementById('audioButton').addEventListener("touchend", playPause, false);
+//document.getElementById('audioButton').addEventListener("mouseup", playPause, false);
+//document.getElementById('audioButton').addEventListener("touchend", playPause, false);
 
 
 
