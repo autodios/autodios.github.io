@@ -87,7 +87,7 @@ document.getElementById('audioButton').addEventListener("touchend", playPause, f
 
 
 function playPause(){
-    var mediaPlayer = document.getElementById('player');;
+    var mediaPlayer = document.getElementById('player');
     /*if (!isChrome){
         mediaPlayer = document.getElementById('player');
     }
