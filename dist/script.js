@@ -36,8 +36,8 @@ iframeTest.id = "audio";
 iframeTest.style.cssText += "display:none;";
 document.body.appendChild(iframeTest);
 
-var audio = document.createElement('video');
-//const audio = new Audio();
+//var audio = document.createElement('video');
+const audio = new Audio();
 audio.src = "./COMOTODO.mp3";
 audio.controls = true;
 audio.allow = 'autoplay';
