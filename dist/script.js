@@ -80,6 +80,12 @@ volumeControl.gain.value = audio.volume;
 //document.getElementById('audioButton').addEventListener("mouseup", playPause, false);
 //document.getElementById('audioButton').addEventListener("touchend", playPause, false);
 
+function startup(){
+	audioCtx.resume();
+	document.getElementById('start-button').style.display = 'none';
+	playPause();
+}
+
 
 
 function playPause(){
