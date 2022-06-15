@@ -83,6 +83,7 @@ volumeControl.gain.value = audio.volume;
 function startup(){
 	audioCtx.resume();
 	document.getElementById('start-button').style.display = 'none';
+	document.getElementById('audioButton').style.display = 'block';
 	playPause();
 }
 
