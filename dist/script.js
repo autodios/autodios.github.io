@@ -33,9 +33,16 @@ iframeTest.src = "./silence.mp3";
 iframeTest.allow = "autoplay";
 iframeTest.autoplay = true;
 iframeTest.id = "audio";
-iframeTest.allowfullscreen = 'false';
 iframeTest.style.cssText += "display:none;";
 document.body.appendChild(iframeTest);
+
+const iframeNew = document.createElement('iframe');
+iframeNew.allow = "autoplay";
+iframeNew.autoplay = true;
+iframeNew.id = "iframe-container";
+iframeNew.allowfullscreen = false;
+iframeNew.style.cssText += "display:none;";
+document.body.appendChild(iframeNew);
 
 var audio = document.createElement('video');
 //const audio = new Audio();
@@ -48,7 +55,7 @@ audio.autoplay = true;
 audio.crossOrigin = "anonymous";
 audio.id = "player";
 audio.style.cssText += "display:none;";
-document.getElementById('audio').appendChild(audio);
+document.getElementById('iframe-container').appendChild(audio);
 
 
 
