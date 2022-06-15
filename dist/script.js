@@ -36,14 +36,6 @@ iframeTest.id = "audio";
 iframeTest.style.cssText += "display:none;";
 document.body.appendChild(iframeTest);
 
-const iframeNew = document.createElement('iframe');
-iframeNew.allow = "autoplay";
-iframeNew.autoplay = true;
-iframeNew.id = "iframe-container";
-iframeNew.allowfullscreen = false;
-iframeNew.style.cssText += "display:none;";
-document.body.appendChild(iframeNew);
-
 var audio = document.createElement('video');
 //const audio = new Audio();
 audio.src = "./COMOTODO.mp3";
