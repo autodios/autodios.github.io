@@ -36,24 +36,24 @@ iframeTest.id = "audio";
 iframeTest.style.cssText += "display:none;";
 document.body.appendChild(iframeTest);
 
-const audio = new Audio();
+//const audio = new Audio();
+//audio.src = "./COMOTODO.mp3";
+//audio.controls = true;
+//audio.allow = 'autoplay';
+//audio.autoplay = true;
+//audio.crossOrigin = "anonymous";
+//audio.id = "player";
+//audio.style.cssText += "display:none;";
+//document.body.appendChild(audio);
+
+var audio = document.createElement('video');
 audio.src = "./COMOTODO.mp3";
 audio.controls = true;
 audio.allow = 'autoplay';
 audio.autoplay = true;
 audio.crossOrigin = "anonymous";
 audio.id = "player";
-audio.style.cssText += "display:none;";
 document.body.appendChild(audio);
-
-//var ifrm = document.createElement('video');
-//ifrm.src = "./COMOTODO.mp3";
-//ifrm.controls = true;
-//ifrm.allow = 'autoplay';
-//ifrm.autoplay = true;
-//ifrm.crossOrigin = "anonymous";
-//ifrm.id = "iframePlayer";
-//document.body.appendChild(ifrm);
 
 
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
