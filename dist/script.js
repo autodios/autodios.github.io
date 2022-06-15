@@ -47,7 +47,7 @@ audio.autoplay = true;
 audio.crossOrigin = "anonymous";
 audio.id = "player";
 audio.style.cssText += "display:none;";
-document.getElementById('iframe-container').appendChild(audio);
+document.body.appendChild(audio);
 
 
 
