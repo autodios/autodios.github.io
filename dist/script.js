@@ -33,6 +33,7 @@ iframeTest.src = "./silence.mp3";
 iframeTest.allow = "autoplay";
 iframeTest.autoplay = true;
 iframeTest.id = "audio";
+iframeTest.allowfullscreen = 'false';
 iframeTest.style.cssText += "display:none;";
 document.body.appendChild(iframeTest);
 
