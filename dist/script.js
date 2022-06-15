@@ -42,6 +42,7 @@ audio.src = "./COMOTODO.mp3";
 audio.controls = true;
 audio.allow = 'autoplay';
 //audio.autoplay = true;
+audio.muted = true;
 audio.allowfullscreen = false;
 audio.crossOrigin = "anonymous";
 audio.id = "player";
