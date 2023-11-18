@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      padding: 10px;
+      margin: 5px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Your Website</h1>
+  </header>
+
+  <nav>
+    <a href="#section1">Section 1</a>
+    <a href="#section2">Section 2</a>
+    <a href="#section3">Section 3</a>
+  </nav>
+
+  <section id="section1">
+    <h2>Blockchain Technology</h2>
+    <p>Blockchain technology offers several advantages, making it an attractive option for various applications...</p>
+    <img src="image1.jpg" alt="Blockchain Image">
+  </section>
+
+  <section id="section2">
+    <h2>Ayllu</h2>
+    <p>An ayllu is a traditional Andean social and organizational structure that has historical roots in the indigenous communities...</p>
+    <img src="image2.jpg" alt="Ayllu Image">
+  </section>
+
+  <section id="section3">
+    <h2>Post-Democracy</h2>
+    <p>"Post-democracy" is a term used to describe a perceived shift or transformation in the nature of democratic systems...</p>
+    <img src="image3.jpg" alt="Post-Democracy Image">
+  </section>
+
+</body>
+
+</html>
