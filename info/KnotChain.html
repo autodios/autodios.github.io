@@ -4,43 +4,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website Title</title>
+  <title>Your Creative Website</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      color: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      color: #fff;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
 
     header {
-      background-color: #333;
-      padding: 10px;
       text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-bottom: 2px solid #fff;
     }
 
     nav {
-      background-color: #ddd;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-bottom: 2px solid #fff;
       padding: 10px;
       text-align: center;
     }
 
     nav a {
       text-decoration: none;
-      color: #000;
+      color: #fff;
       padding: 10px;
       margin: 5px;
       font-weight: bold;
+      transition: all 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
     }
 
     section {
-      padding: 20px;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 20px;
+      border-radius: 10px;
+      text-align: justify;
+    }
+
+    section h2 {
+      color: #ffcc00;
     }
 
     img {
       max-width: 100%;
       height: auto;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      nav a {
+        font-size: 14px;
+      }
+
+      section {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -48,13 +81,13 @@
 <body>
 
   <header>
-    <h1>Your Website</h1>
+    <h1>Your Creative Website</h1>
   </header>
 
   <nav>
-    <a href="#section1">Section 1</a>
-    <a href="#section2">Section 2</a>
-    <a href="#section3">Section 3</a>
+    <a href="#section1">Blockchain Technology</a>
+    <a href="#section2">Ayllu</a>
+    <a href="#section3">Post-Democracy</a>
   </nav>
 
   <section id="section1">
