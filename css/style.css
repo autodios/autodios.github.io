@@ -252,7 +252,7 @@ footer .copy, footer .copy a {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100%;
+  bottom: 0;                /* full height */
   width: 200px;             /* desktop width */
   background: #fff;
   list-style: none;
@@ -266,14 +266,25 @@ footer .copy, footer .copy a {
 }
 
 .menuBar li {
- cursor: pointer;
+  cursor: pointer;
   font-weight: 300;
   font-size: 16px;          /* desktop text size */
 }
 
-  .menuBar li {
-    font-size: 12px;        /* smaller text */
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+  .menuBar {
+    width: 100px;           /* smaller menu */
+    padding: 10px 5px;
+    gap: 8px;
+    top: 0;                 /* stick to top */
+    bottom: 0;              /* stick to bottom */
   }
+
+  .menuBar li {
+    font-size: 8px;        /* smaller text */
+  }
+}
 .highlight{
 	border-bottom: 1px dotted;
 }
@@ -330,7 +341,7 @@ img{
 #name {
 	display: block;
 }
-}
+
  .content-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -357,19 +368,7 @@ img{
  font-size: 0.9rem;
       }
 	 /* --- MOBILE ADJUSTMENT --- */
-@media (max-width: 768px) {
-  .menuBar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: auto;              /* no full height on mobile */
-    width: 100%;               /* span across top */
-    flex-direction: row;       /* horizontal items */
-    justify-content: space-around;
-    border-left: none;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-  }
+
     }
 
    
