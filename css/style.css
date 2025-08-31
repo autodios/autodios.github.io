@@ -315,12 +315,42 @@ img{
 }
 
 
-@media (max-width: 690px) {
+@media (max-width: 680px) {
 	h1 {
   font-size: 1.0em;
 }
+ /* Even smaller adjustments on phones */
+
 
 #name {
 	display: block;
 }
 }
+ .content-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .content-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .content-container p {
+      color: black;
+      text-align: justify;
+      margin-top: 1rem;
+      font-size: 1.1rem; /* base font size */
+      line-height: 1.6;
+    }
+    
+ @media (max-width: 600px) {
+ .content-container p {
+ font-size: 0.9rem;
+      }
+    }
+
+   
