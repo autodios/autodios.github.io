@@ -204,7 +204,7 @@ footer .copy, footer .copy a {
 
 
 
-/*
+
 
 .menuBar li
 {
@@ -244,47 +244,10 @@ footer .copy, footer .copy a {
 	font-size: 2.5em;
   font-weight: 1000;
 
-
+ /* margin-left: 10%*/
   
-}*/
-
-.menuBar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;                /* full height */
-  width: 200px;             /* desktop width */
-  background: #fff;
-  list-style: none;
-  margin: 0;
-  padding: 20px 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border-left: 1px solid #ccc;
-  z-index: 1000;
 }
 
-.menuBar li {
-  cursor: pointer;
-  font-weight: 300;
-  font-size: 16px;          /* desktop text size */
-}
-
-/* --- MOBILE --- */
-@media (max-width: 768px) {
-  .menuBar {
-    width: 100px;           /* smaller menu */
-    padding: 10px 5px;
-    gap: 8px;
-    top: 0;                 /* stick to top */
-    bottom: 0;              /* stick to bottom */
-  }
-
-  .menuBar li {
-    font-size: 8px;        /* smaller text */
-  }
-}
 .highlight{
 	border-bottom: 1px dotted;
 }
@@ -320,30 +283,10 @@ img{
 	max-width: 800px;
 }
 
-/* --- Content-wrap matching images and avoiding menu overlap --- */
 .content-wrap {
-  display: inline-block;          /* shrink to fit content */
+  width: 90%;
+  max-width: 750px;
   margin-top: 20px;
-  margin-right: 210px;            /* push content away from menu (desktop) */
-}
-
-.content-wrap img {
-  display: block;                 /* each image defines container width */
-  max-width: 100%;
-  height: auto;
-}
-
-.content-wrap p {
-  margin: 10px 0;
-  line-height: 1.4;
-}
-
-/* --- MOBILE: remove extra right margin --- */
-@media (max-width: 768px) {
-  .content-wrap {
-    margin-right: 0;             /* menu is thinner, no need to push away */
-  }
-}
 
 /*  margin: 0 auto;
   margin-left: 20%;
@@ -351,44 +294,12 @@ img{
 }
 
 
-@media (max-width: 680px) {
+@media (max-width: 690px) {
 	h1 {
   font-size: 1.0em;
 }
- /* Even smaller adjustments on phones */
-
 
 #name {
 	display: block;
 }
-
- .content-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1rem;
-    }
-
-    .content-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .content-container p {
-      color: black;
-      text-align: justify;
-      margin-top: 1rem;
-      font-size: 1.1rem; /* base font size */
-      line-height: 1.6;
-    }
-    
- @media (max-width: 600px) {
- .content-container p {
- font-size: 0.9rem;
-      }
-	 /* --- MOBILE ADJUSTMENT --- */
-
-    }
-
-   
+}
