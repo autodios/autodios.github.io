@@ -320,10 +320,30 @@ img{
 	max-width: 800px;
 }
 
+/* --- Content-wrap matching images and avoiding menu overlap --- */
 .content-wrap {
-  width: 90%;
-  max-width: 750px;
+  display: inline-block;          /* shrink to fit content */
   margin-top: 20px;
+  margin-right: 210px;            /* push content away from menu (desktop) */
+}
+
+.content-wrap img {
+  display: block;                 /* each image defines container width */
+  max-width: 100%;
+  height: auto;
+}
+
+.content-wrap p {
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+/* --- MOBILE: remove extra right margin --- */
+@media (max-width: 768px) {
+  .content-wrap {
+    margin-right: 0;             /* menu is thinner, no need to push away */
+  }
+}
 
 /*  margin: 0 auto;
   margin-left: 20%;
