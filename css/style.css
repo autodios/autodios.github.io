@@ -249,19 +249,20 @@ footer .copy, footer .copy a {
 }*/
 
 .menuBar {
-  position: fixed;
+ position: fixed;
   top: 0;
   right: 0;
-  height: 100%;            /* full height of the viewport */
-  width: 200px;            /* adjust width as needed */
-  background: #fff;        /* give it a background so it doesn’t overlap text */
+  height: 100%;
+  width: 200px;
+  background: #fff;
   list-style: none;
   margin: 0;
-  padding: 20px 10px;      /* some breathing room */
+  padding: 20px 10px;
   display: flex;
-  flex-direction: column;  /* stack items vertically */
-  gap: 20px;               /* space between menu items */
-  border-left: 1px solid #ccc; /* optional separation line */
+  flex-direction: column;   /* vertical items */
+  gap: 20px;
+  border-left: 1px solid #ccc;
+  z-index: 1000;
 }
 
 .menuBar li {
@@ -351,6 +352,20 @@ img{
  .content-container p {
  font-size: 0.9rem;
       }
+	 /* --- MOBILE ADJUSTMENT --- */
+@media (max-width: 768px) {
+  .menuBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: auto;              /* no full height on mobile */
+    width: 100%;               /* span across top */
+    flex-direction: row;       /* horizontal items */
+    justify-content: space-around;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
     }
 
    
