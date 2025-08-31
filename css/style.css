@@ -204,7 +204,7 @@ footer .copy, footer .copy a {
 
 
 
-
+/*
 
 .menuBar li
 {
@@ -244,8 +244,29 @@ footer .copy, footer .copy a {
 	font-size: 2.5em;
   font-weight: 1000;
 
- /* margin-left: 10%*/
+
   
+}*/
+
+.menuBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;            /* full height of the viewport */
+  width: 200px;            /* adjust width as needed */
+  background: #fff;        /* give it a background so it doesn’t overlap text */
+  list-style: none;
+  margin: 0;
+  padding: 20px 10px;      /* some breathing room */
+  display: flex;
+  flex-direction: column;  /* stack items vertically */
+  gap: 20px;               /* space between menu items */
+  border-left: 1px solid #ccc; /* optional separation line */
+}
+
+.menuBar li {
+  cursor: pointer;
+  font-weight: 300;
 }
 
 .highlight{
